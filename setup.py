@@ -9,9 +9,9 @@ with open(os.path.join(here, 'CHANGES.txt')) as f:
     CHANGES = f.read()
 
 requires = [
-    'cryptacular',  # <-- We need to install this; password management
+    'cryptacular',
     'plaster_pastedeploy',
-    'psycopg2',
+    'psycopg2-binary',
     'pyramid >= 1.9a',
     'pyramid_debugtoolbar',
     'pyramid_jinja2',
@@ -57,7 +57,7 @@ setup(
             'main = learning_journal:main',
         ],
         'console_scripts': [
-            'initialize_learning_journal_db = learning_journal.scripts.initializedb:main',
+            'initialize_db = learning_journal.scripts.initializedb:main',
         ],
     },
 )
