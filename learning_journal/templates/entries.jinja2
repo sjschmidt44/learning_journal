@@ -1,0 +1,20 @@
+{% extends "base.jinja2" %}
+
+{% block content %}
+<div class="content">
+  <h1>Welcome to my list of entries</h1>
+  {% if entries %}
+  <ul>
+    {% for entry in entries %}
+    <li>
+      <h3>{{entry.id}}: {{entry.title}}</h3>
+      <p><span>{{entry.author}}</span> <span>({{entry.date}})</span></p>
+      <p><a href="{{request.route_url('detail', id=entry.id)}}">Click here for more info</a></p>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>There are no entries</p>
+  {% endif %}
+</div>
+{% endblock content %}

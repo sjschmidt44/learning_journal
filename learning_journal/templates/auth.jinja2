@@ -1,0 +1,22 @@
+{% extends "base.jinja2" %}
+
+{% block content %}
+<div class="content">
+  <h1>Registration</h1>
+  <form id="registration-form" action="{{request.route_url('auth')}}" method="POST">
+    <input type="hidden" name="csrf_token" value="{{request.session.get_csrf_token()}}">
+    <input type="text" name="username">
+    <input type="email" name="email">
+    <input type="password" name="password">
+    <button type="submit" name="submit">Sign-Up</button>
+  </form>
+
+  <h1>Sign-in</h1>
+  <form id="signin-form" action="{{request.route_url('auth')}}" method="GET">
+    <input type="hidden" name="csrf_token" value="{{request.session.get_csrf_token()}}">
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <button type="submit" name="submit">Sign-In</button>
+  </form>
+</div>
+{% endblock content %}

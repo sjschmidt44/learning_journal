@@ -1,0 +1,14 @@
+{% extends "base.jinja2" %}
+
+{% block content %}
+<div class="content">
+  <h1>Entry Detail</h1>
+  <p>You're viewing a detail page for a single Entry!</p>
+
+  <h2>{{entry.title}}</h2>
+  <img src="{{img}}" alt="some random image">
+  <p><span>{{entry.author}}</span><span>({{entry.date}})</span></p>
+  <p>{{entry.body}}</p>
+</div>
+{% endblock content %}
+

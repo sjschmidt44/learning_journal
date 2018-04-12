@@ -1,0 +1,19 @@
+[
+  "learning_journal/tests/test_model_entry.py::test_constructed_entry_with_correct_date_added_to_database",
+  "learning_journal/tests/test_model_entry.py::test_constructed_entry_with_no_date_added_to_database",
+  "learning_journal/tests/test_model_entry.py::test_constructed_entry_with_date_added_to_database",
+  "learning_journal/tests/test_model_entry.py::test_entry_with_no_title_throws_error",
+  "learning_journal/tests/test_view_default.py::test_default_response_home_view",
+  "learning_journal/tests/test_view_default.py::test_default_response_auth_view",
+  "learning_journal/tests/test_view_default.py::test_auth_signin_view",
+  "learning_journal/tests/test_view_default.py::test_auth_signup_view",
+  "learning_journal/tests/test_view_default.py::test_bad_reqeust_auth_signup_view",
+  "learning_journal/tests/test_view_default.py::test_bad_request_method_auth_signup_view",
+  "learning_journal/tests/test_view_entry.py::test_default_response_entries_view",
+  "learning_journal/tests/test_view_entry.py::test_default_detail_view",
+  "learning_journal/tests/test_view_entry.py::test_detail_not_found",
+  "learning_journal/tests/test_view_entry.py::test_default_response_new_view",
+  "learning_journal/tests/test_view_entry.py::test_valid_post_to_new_view",
+  "learning_journal/tests/test_view_entry.py::test_valid_post_to_new_view_adds_record_to_db",
+  "learning_journal/tests/test_view_entry.py::test_invalid_post_to_new_view"
+]

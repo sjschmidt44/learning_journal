@@ -1,0 +1,16 @@
+{% extends "base.jinja2" %}
+
+{% block content %}
+<div class="content">
+  <h1>Add a new Entry</h1>
+  <form id="entry-form" action="{{request.route_url('new')}}" method="POST">
+    <input type="hidden" name="csrf_token" value="{{request.session.get_csrf_token()}}">
+    <input type="text" name="title">
+    <textarea type="text" name="body"></textarea>
+    <input type="date" name="date">
+    <input type="text" name="author">
+    <button type="submit" name="submit">Add</button>
+  </form>
+</div>
+{% endblock content %}
+
